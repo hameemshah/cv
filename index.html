@@ -1,60 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>Hameem Shah Developer & AI Researcher</title>
+
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap" rel="stylesheet">
-    <title>Hameem Shah</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .title-font { font-family: 'Playfair Display', serif; }
+    </style>
 </head>
-<body>
-    <div class="top">
-        <img class="top-cloud" src="images/cloud.png" alt="cloud-img">
-        <h1>I'm Hameem.</h1>
-        <h2>a <span>pro</span>grammer.</h2>
-        <img class="btm-cloud" src="images/cloud.png" alt="cloud-img">
-        <img src="images/mountain.png" alt="mountain-img">
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- 🔹 NAVBAR -->
+    <nav class="fixed top-0 w-full bg-white/80 backdrop-blur shadow z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold title-font text-indigo-600">Hameem</h1>
+            <div class="hidden md:flex space-x-8 font-semibold">
+                <a href="#home" class="hover:text-indigo-600 transition">Home</a>
+                <a href="#about" class="hover:text-indigo-600 transition">About</a>
+                <a href="#skills" class="hover:text-indigo-600 transition">Skills</a>
+                <a href="#contact" class="hover:text-indigo-600 transition">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🔹 HERO SECTION -->
+<!-- 🔹 HERO SECTION — AERO THEME -->
+<section id="home" class="relative bg-gradient-to-br from-[#dff3ff] via-[#e8f8ff] to-[#f3fbff] text-gray-800 py-40 overflow-hidden">
+
+    <!-- soft blurred circles -->
+    <div class="absolute top-20 left-10 w-60 h-60 bg-[#b8e4ff] opacity-40 blur-3xl rounded-full"></div>
+    <div class="absolute bottom-10 right-10 w-80 h-80 bg-[#c7f2f7] opacity-40 blur-3xl rounded-full"></div>
+
+    <div class="container mx-auto px-6 text-center relative z-10">
+      <img src="images/cloud.png" class="cloud" alt="cloud">
+        <h1 class="title-font text-5xl md:text-6xl font-bold mb-4" data-aos="fade-up"
+            style="color:#23678f;">
+            I'm Hameem Shah
+        </h1>
+
+        <h2 class="text-xl md:text-2xl mb-6 font-semibold opacity-90" data-aos="fade-up" data-aos-delay="150"
+            style="color:#3a7fa3;">
+            Developer • AI Researcher • Deep Learning Educator
+        </h2>
+
+        <!-- Glass card -->
+        <div class="backdrop-blur-xl bg-white/30 border border-white/40 rounded-2xl shadow-xl p-6 max-w-2xl mx-auto"
+             data-aos="fade-up" data-aos-delay="300">
+            <p class="text-lg leading-relaxed" style="color:#265f7a;">
+                I create meaningful software and study AI systems with a focus on fairness,
+                transparency, and explainability — all while loving languages, cooking, and creative thinking.
+            </p>
+        </div>
+        <img src="images/mountain.png" class="mount" alt="mountain">
     </div>
-        <div class="middle">
-            <div class="profile">
-              <img src="images/hameem.png" alt="hameem-img" width="200">
-              <h2 id="hello">Hello.</h2>
-              <p class="description hello">I am a BCA graduate currently pursuing my MCA from Isalmic University Of Science & Technology.
-                I'm intreseted in coding, cooking and listening pop.
-              </p>
+</section>
+
+
+    <!-- 🔹 ABOUT SECTION (Two Columns) -->
+    <section id="about" class="py-24">
+        <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
+            <!-- LEFT TEXT -->
+            <div data-aos="fade-right">
+                <h2 class="title-font text-4xl font-bold mb-6">About Me</h2>
+                <p class="text-lg leading-relaxed">
+                    I'm a developer from Kashmir with a deep love for software engineering, natural languages, 
+                    and exploring the human side of artificial intelligence.  
+                    My Master's in Computer Science helped me dive into deep learning, where I now explore 
+                    fairness, bias, and explainability in modern AI models.
+                </p>
+                <p class="text-lg mt-4 leading-relaxed">
+                    Outside work, I enjoy cooking, thinking deeply about everything around me, and listening to calming pop vibes. 
+                    I'm always curious — always learning.
+                </p>
             </div>
-            <hr>
-            <div class="skills">
-              <h2 id="skills">My Skills.</h2>
-              <div class="skill-row">
-                <img class="skill-img1" src="images/computer.png" alt="computerp-img">
-                <h3 id="code">Coding</h3>
-                <p class="code">I'm a coder who can code in c, c++, java, python as well as full-stack development. This year I have challenged myself to learn C# and ASP.NET to create web and mobile apps.</p>
-              </div>
-              <div class="skill-row">
-                <img class="skill-img2" src="images/chillies.png" alt="chillies-img">
-                <h3 id="cook">Cooking</h3>
-                <p class="cook">Cooking is one of hobbies as I like to brew and bake.There are a lot of dishes that I can make, mostly I like pizza, burger, pasta, chowman and other chinese and italian cusines.</p>
-              </div>
+
+            <!-- RIGHT IMAGE / GRAPHIC -->
+            <div class="flex justify-center" data-aos="fade-left">
+                <img src="https://avatars.githubusercontent.com/u/90436297?v=4" 
+                     alt="Hameem Photo"
+                     class="w-80 rounded-2xl shadow-xl transform hover:scale-105 transition" />
             </div>
-            <hr>
-            <div class="contact-me">
-              <h2 id="touch">Get In Touch</h2>
-              <h3 class="touch">If you love Pizza as much as I do.</h3>
-              <p>Love pizza like me? Let's bake one and share the recipe alongside with coding. We can discuss and eat together.</p>
-              <a class="btn" href="mailto:hameemhussain@yahoo.com">CONTACT ME</a>
+
+        </div>
+    </section>
+
+    <!-- 🔹 SKILLS -->
+    <section id="skills" class="py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="title-font text-4xl font-bold text-center mb-12" data-aos="fade-down">My Skills</h2>
+
+            <div class="grid md:grid-cols-2 gap-12">
+
+                <!-- Coding Skill -->
+                <div class="p-8 bg-gray-100 rounded-2xl shadow hover:shadow-xl transition" data-aos="zoom-in">
+                    <img src="images/computer.png" class="w-20 mx-auto mb-6" alt="coding">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Coding</h3>
+                    <p class="text-lg">
+                        Skilled in Python, Java, C++, JavaScript, and PHP.  
+                        Research areas include Explainable AI, fairness metrics, and bias detection in ML systems.
+                    </p>
+                </div>
+
+                <!-- Cooking Skill -->
+                <div class="p-8 bg-gray-100 rounded-2xl shadow hover:shadow-xl transition" data-aos="zoom-in" data-aos-delay="150">
+                    <img src="images/chillies.png" class="w-20 mx-auto mb-6" alt="cooking">
+                    <h3 class="text-2xl font-semibold text-indigo-600 mb-3">Cooking</h3>
+                    <p class="text-lg">
+                        Cooking helps me relax. I enjoy baking, brewing, and experimenting 
+                        with Italian and Asian dishes — especially pizza and pasta.
+                    </p>
+                </div>
+
             </div>
-          </div>
-          <div class="bottom">
-            <a class="footer-link" target="_blank" href="https://www.linkedin.com/in/muhammad-hameem-983938136/">LinkedIn</a>
-            <a class="footer-link" target="_blank" href="https://twitter.com/shah_hameem">Twitter</a>
-            <a class="footer-link" target="_blank" href="https://hameemshah.github.io/cv/">Website</a>
-            <p class="copy">© 2023 Hameem Hussain @Web-Development</p>
-          </div>
-    </div>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+        </div>
+    </section>
+
+    <!-- 🔹 CONTACT -->
+    <section id="contact" class="py-24">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="title-font text-4xl font-bold mb-4" data-aos="fade-up">Get In Touch</h2>
+            <p class="text-xl opacity-80 mb-6" data-aos="fade-up" data-aos-delay="150">
+                Pizza + Coding = Perfect combo 🍕💻
+            </p>
+            <p class="max-w-xl mx-auto text-lg mb-8" data-aos="fade-up" data-aos-delay="250">
+                Let's collaborate on AI, software development, or even food experiments.
+                I enjoy meaningful conversations and building things that matter.
+            </p>
+
+            <a href="mailto:hameemhussain@yahoo.com"
+               class="inline-block px-10 py-4 bg-indigo-600 text-white rounded-full shadow-lg hover:bg-indigo-700 transition text-lg font-semibold"
+               data-aos="zoom-in">
+               Contact Me
+            </a>
+        </div>
+    </section>
+
+    <!-- 🔹 FOOTER -->
+    <footer class="bg-gray-900 text-gray-200 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <div class="flex justify-center space-x-6 mb-4 text-lg">
+                <a href="https://www.linkedin.com/in/hameem-hussain-shah-983938136/" target="_blank" class="hover:text-white">LinkedIn</a>
+                <a href="https://twitter.com/shah_hameem" target="_blank" class="hover:text-white">Twitter</a>
+                <a href="https://hameem.fun" target="_blank" class="hover:text-white">Website</a>
+            </div>
+            <p class="opacity-70">© 2025 Hameem Hussain — Portfolio</p>
+        </div>
+    </footer>
+
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
 </body>
 </html>
